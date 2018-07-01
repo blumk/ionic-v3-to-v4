@@ -4,13 +4,17 @@ A demo project to display the migration from Ionic v3 to v4
 
 ## Components
 
-This demo app/repo contains only a couple of components which gonna be migrated respectively
+This demo app/repo contains only a couple of components of **ionic-angular** which gonna be migrated respectively
 
 * Side menu
 * Navbar
 * Button
 * Action sheet
 * Navigation
+
+And an example of migration of a **ionic-native** wrapper, respectively
+
+* Camera wrapper 
 
 ## Branchs
 
@@ -56,6 +60,10 @@ we are all set, we could now create a Ionic v4 angular project using your 2nd cl
 ### Tooling
 
 [Ionic cli - Tooling introduction](https://github.com/ionic-team/ionic-cli/issues/3019)
+
+### Ionic native
+
+[Ionic Native - Blog post v5 beta](https://blog.ionicframework.com/help-test-ionic-native-5/)
 
 ## License
 
