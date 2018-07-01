@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Camera, CameraOptions, CameraPopoverOptions} from '@ionic-native/camera';
+import {Camera, CameraOptions, CameraPopoverOptions} from '@ionic-native/camera/ngx';
 
 @Component({
   selector: 'camera',
