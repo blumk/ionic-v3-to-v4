@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the CameraPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {Component} from '@angular/core';
+import {IonicPage} from 'ionic-angular';
+import {Camera, CameraOptions, CameraPopoverOptions} from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,39 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CameraPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  image: string;
+
+  constructor(private camera: Camera) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CameraPage');
-  }
+  pickPhoto() {
+    const popoverOptions: CameraPopoverOptions = {
+      x: 0,
+      y: 0,
+      width: 1080,
+      height: 1080,
+      arrowDir: this.camera.PopoverArrowDirection.ARROW_ANY
+    };
 
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
+      allowEdit: false,
+      encodingType: this.camera.EncodingType.JPEG,
+      targetWidth: 1080,
+      targetHeight: 1080,
+      mediaType: this.camera.MediaType.PICTURE,
+      correctOrientation: true,
+      saveToPhotoAlbum: false,
+      cameraDirection: this.camera.Direction.BACK,
+      popoverOptions: popoverOptions
+    };
+
+    this.camera.getPicture(options).then((imageData) => {
+      this.image = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      this.image = null;
+    });
+  }
 }
