@@ -6,7 +6,6 @@ A demo project to display the migration from Ionic v3 to v4
 
 This demo app/repo contains only a couple of components of **ionic-angular** which gonna be migrated respectively
 
-* Side menu
 * Navbar
 * Button
 * Action sheet
@@ -64,6 +63,10 @@ we are all set, we could now create a Ionic v4 angular project using your 2nd cl
 ### Ionic native
 
 [Ionic Native - Blog post v5 beta](https://blog.ionicframework.com/help-test-ionic-native-5/)
+
+### Plugins
+
+[cordova-plugin-ionic-webview - Beta for Ionic v4 compatibility](https://github.com/ionic-team/cordova-plugin-ionic-webview) 
 
 ## License
 
