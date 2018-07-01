@@ -10,4 +10,10 @@
 
 <ion-content padding>
 
+  <ion-button primary (click)="pickPhoto()">Import from gallery</ion-button>
+
+  <div *ngIf="image != null" class="show-image" padding>
+    <img [src]="image"/>
+  </div>
+
 </ion-content>
