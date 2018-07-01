@@ -15,8 +15,8 @@ export class HomePage {
 
   }
 
-  openActionSheet() {
-    const actionSheet = this.actionSheetCtrl.create({
+  async openActionSheet() {
+    const actionSheet: HTMLIonActionSheetElement = await this.actionSheetCtrl.create({
       header: 'Navigate to...',
       buttons: [
         {
@@ -34,6 +34,7 @@ export class HomePage {
         }
       ]
     });
+
     actionSheet.present().then(() => {
       // Do nothing
     });
