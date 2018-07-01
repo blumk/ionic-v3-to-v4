@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './pages/list/list.module#ListPageModule'
-  }
+  },
+  { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
