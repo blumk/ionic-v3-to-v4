@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ActionSheetController, NavController} from '@ionic/angular';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-page-home',
@@ -6,5 +8,35 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+  constructor(private navCtrl: NavController,
+              private actionSheetCtrl: ActionSheetController,
+              private router: Router) {
+
+  }
+
+  openActionSheet() {
+    const actionSheet = this.actionSheetCtrl.create({
+      header: 'Navigate to...',
+      buttons: [
+        {
+          text: 'Camera page',
+          role: 'destructive',
+          handler: () => {
+            this.router.navigate(['/camera']);
+          }
+        }, {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            // Do nothing
+          }
+        }
+      ]
+    });
+    actionSheet.present().then(() => {
+      // Do nothing
+    });
+  }
 
 }
