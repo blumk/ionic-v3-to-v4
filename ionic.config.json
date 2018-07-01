@@ -1,0 +1,7 @@
+{
+  "name": "ionic-v3-to-v4",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
