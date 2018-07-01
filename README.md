@@ -7,10 +7,10 @@ A demo project to display the migration from Ionic v3 to v4
 This demo app/repo contains only a couple of components which gonna be migrated respectively
 
 * Side menu
-* Buttons
+* Navbar
+* Button
 * Action sheet
 * Navigation
-* Hamburger and back arrow
 
 ## Branchs
 
