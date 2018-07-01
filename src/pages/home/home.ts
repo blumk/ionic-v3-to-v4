@@ -15,9 +15,10 @@ export class HomePage {
 
   openActionSheet() {
     const actionSheet = this.actionSheetCtrl.create({
+      title: 'Navigate to...',
       buttons: [
         {
-          text: 'Navigate to camera page',
+          text: 'Camera page',
           role: 'destructive',
           handler: () => {
             this.navCtrl.push(CameraPage);
