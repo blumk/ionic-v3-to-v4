@@ -39,6 +39,24 @@ we are all set, we could now create a Ionic v4 angular project using your 2nd cl
      cd /somewhereelse/
      /pathtomyalternatecli/node_modules/ionic/bin/ionic start 
 
+## Resources
+
+### Breaking changes
+
+[Ionic v4 - List of breaking changes](https://github.com/ionic-team/ionic/blob/master/angular/BREAKING.md)
+
+### Migration
+
+[Ionic v4-migration-tslint](https://github.com/ionic-team/v4-migration-tslint)
+
+### Router
+
+[Josh Morony's blog post about Ionic v4 routing](https://www.joshmorony.com/using-angular-routing-with-ionic-4/)
+
+### Tooling
+
+[Ionic cli - Tooling introduction](https://github.com/ionic-team/ionic-cli/issues/3019)
+
 ## License
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com)
