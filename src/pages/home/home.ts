@@ -21,7 +21,7 @@ export class HomePage {
           text: 'Camera page',
           role: 'destructive',
           handler: () => {
-            this.navCtrl.push(CameraPage);
+            this.navigateToCamera();
           }
         }, {
           text: 'Cancel',
@@ -35,5 +35,9 @@ export class HomePage {
     actionSheet.present().then(() => {
       // Do nothing
     });
+  }
+
+  navigateToCamera() {
+    this.navCtrl.push(CameraPage);
   }
 }
