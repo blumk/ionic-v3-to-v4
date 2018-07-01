@@ -56,6 +56,10 @@ we are all set, we could now create a Ionic v4 angular project using your 2nd cl
 
 [Josh Morony's blog post about Ionic v4 routing](https://www.joshmorony.com/using-angular-routing-with-ionic-4/)
 
+or
+
+[Josh Morony's blog post about converting a Push/Pop routing](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
+
 ### Tooling
 
 [Ionic cli - Tooling introduction](https://github.com/ionic-team/ionic-cli/issues/3019)
