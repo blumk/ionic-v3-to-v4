@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {ActionSheetController, NavController} from '@ionic/angular';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-page-home',
@@ -10,8 +9,7 @@ import {Router} from '@angular/router';
 export class HomePage {
 
   constructor(private navCtrl: NavController,
-              private actionSheetCtrl: ActionSheetController,
-              private router: Router) {
+              private actionSheetCtrl: ActionSheetController) {
 
   }
 
@@ -23,7 +21,9 @@ export class HomePage {
           text: 'Camera page',
           role: 'destructive',
           handler: () => {
-            this.router.navigate(['/camera']);
+            this.navCtrl.goForward('/camera').then(() => {
+              // Do nothing
+            });
           }
         }, {
           text: 'Cancel',
