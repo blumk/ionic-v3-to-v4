@@ -11,7 +11,9 @@
 
   <button ion-button color="primary" (click)="pickPhoto()">Import from gallery</button>
 
-  <div *ngIf="image != null" class="show-image" padding>
-    <img [src]="image"/>
+  <button ion-button color="light" (click)="mockPhoto()">Mock photo</button>
+
+  <div *ngIf="image != null" padding-top>
+    <button ion-button color="secondary" (click)="navigateShow()">Show results</button>
   </div>
 </ion-content>

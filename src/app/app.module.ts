@@ -10,13 +10,15 @@ import {CameraPage} from '../pages/camera/camera';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Camera} from '@ionic-native/camera';
+import {ShowPage} from '../pages/show/show';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CameraPage
+    CameraPage,
+    ShowPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import {Camera} from '@ionic-native/camera';
     MyApp,
     HomePage,
     ListPage,
-    CameraPage
+    CameraPage,
+    ShowPage
   ],
   providers: [
     StatusBar,

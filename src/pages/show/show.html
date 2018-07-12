@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>camera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h2>Results:</h2>
+
+  <div *ngIf="image != null" class="show-image" padding>
+    <img [src]="image"/>
+  </div>
+
+</ion-content>
