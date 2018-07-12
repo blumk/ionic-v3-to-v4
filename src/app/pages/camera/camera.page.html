@@ -10,10 +10,12 @@
 
 <ion-content padding>
 
-  <ion-button primary (click)="pickPhoto()">Import from gallery</ion-button>
+  <ion-button color="primary" (click)="pickPhoto()">Import from gallery</ion-button>
 
-  <div *ngIf="image != null" class="show-image" padding>
-    <img [src]="image"/>
+  <ion-button color="light" (click)="mockPhoto()">Mock photo</ion-button>
+
+  <div *ngIf="imageService.image != null" padding-top>
+    <ion-button color="secondary" routerDirection="forward" routerLink="/show">Show results</ion-button>
   </div>
 
 </ion-content>

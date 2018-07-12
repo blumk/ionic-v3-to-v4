@@ -10,6 +10,7 @@ import {Camera} from '@ionic-native/camera/ngx';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {ComponentsModule} from './components/components.module';
+import {ImageService} from './services/image.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,8 @@ import {ComponentsModule} from './components/components.module';
     ComponentsModule
   ],
   providers: [
+    ImageService,
+
     StatusBar,
     SplashScreen,
     Camera,

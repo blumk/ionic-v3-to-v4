@@ -15,7 +15,8 @@ const routes: Routes = [
     path: 'list',
     loadChildren: './pages/list/list.module#ListPageModule'
   },
-  { path: 'camera', loadChildren: './pages/camera/camera.module#CameraPageModule' }
+  { path: 'camera', loadChildren: './pages/camera/camera.module#CameraPageModule' },
+  { path: 'show', loadChildren: './pages/show/show.module#ShowPageModule' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
